@@ -92,7 +92,7 @@ export default function App() {
 
               {/* Loader percentage */}
               <h2 className="text-2xl font-mono font-bold tracking-wider text-white mb-2">
-                MUXRIDDINBEK<span className="text-orange-500">.DEV</span>
+                MUXRIDDIN<span className="text-orange-500">.DEV</span>
               </h2>
 
               <p className="text-xs font-mono tracking-widest text-orange-500/60 uppercase mb-6 animate-pulse">

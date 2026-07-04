@@ -234,7 +234,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDarkMode }) =>
                                 ? 'bg-slate-950/80 border-slate-800 text-slate-200 focus:border-orange-500/50 focus:ring-2 focus:ring-orange-500/10' 
                                 : 'bg-slate-50 border-slate-200 text-slate-800 focus:border-orange-600/30 focus:ring-2 focus:ring-orange-600/10'
                           }`}
-                          placeholder="Muxriddinbek"
+                          placeholder="Muxriddin"
                         />
                         {errors.name && (
                           <span className="text-[10px] text-red-500 flex items-center gap-1 mt-1 font-semibold">

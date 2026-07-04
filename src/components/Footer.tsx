@@ -70,7 +70,7 @@ export const Footer: React.FC<FooterProps> = ({ isDarkMode }) => {
         <div className="relative mb-4 w-16 h-16 rounded-full p-1 overflow-hidden shadow-md bg-slate-900/10 border border-white/20">
           <img 
             src={profilePhoto} 
-            alt="Muxriddinbek" 
+            alt="Muxriddin Ro'zimboyev" 
             className="w-full h-full object-cover rounded-full object-top referrerpolicy"
             referrerPolicy="no-referrer"
           />
@@ -80,7 +80,7 @@ export const Footer: React.FC<FooterProps> = ({ isDarkMode }) => {
         <h4 className={`text-base font-bold font-mono tracking-wider mb-2 ${
           isDarkMode ? 'text-white' : 'text-slate-800'
         }`}>
-          MUXRIDDINBEK<span className={isDarkMode ? 'text-orange-500' : 'text-orange-600'}>.DEV</span>
+          MUXRIDDIN<span className={isDarkMode ? 'text-orange-500' : 'text-orange-600'}>.DEV</span>
         </h4>
 
         {/* Premium quote */}
@@ -114,7 +114,7 @@ export const Footer: React.FC<FooterProps> = ({ isDarkMode }) => {
         <p className={`text-[10px] font-mono tracking-wider ${
           isDarkMode ? 'text-slate-500' : 'text-slate-400'
         }`}>
-          &copy; {new Date().getFullYear()} Muxriddinbek Portfolio. Barcha huquqlar himoyalangan.
+          &copy; {new Date().getFullYear()} Muxriddin Portfolio. Barcha huquqlar himoyalangan.
         </p>
 
       </div>

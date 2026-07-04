@@ -1,9 +1,9 @@
 import { ProfileData, StatItem, TimelineItem, SkillItem, SocialLinkItem } from './types';
 
 export const profileData: ProfileData = {
-  name: 'Muxriddinbek',
-  lastName: 'Tursunov', // A natural, professional Uzbek last name
-  age: 22,
+  name: 'Muxriddin',
+  lastName: "Ro'zimboyev", // Updated last name
+  age: 24,
   country: "O'zbekiston",
   city: 'Toshkent',
   profession: [
@@ -11,7 +11,7 @@ export const profileData: ProfileData = {
     'Kiberxavfsizlik Mutaxassisi',
     'AI Kontent Yaratuvchisi'
   ],
-  bio: "Assalomu alaykum! Men Muxriddinbek, axborot texnologiyalari va raqamli xavfsizlik sohasida professional tajribaga ega mutaxassisman. Mening asosiy maqsadim — zamonaviy tarmoq tizimlarini loyihalash, yuqori darajadagi kiberxavfsizlikni ta'minlash hamda sun'iy intellekt imkoniyatlaridan unumli foydalangan holda kreativ kontentlar yaratishdir. Har bir loyihaga mukammallik va xavfsizlik prizmasidan yondashaman.",
+  bio: "Assalomu alaykum! Men Muxriddin, axborot texnologiyalari va raqamli xavfsizlik sohasida professional tajribaga ega mutaxassisman. Mening asosiy maqsadim — zamonaviy tarmoq tizimlarini loyihalash, yuqori darajadagi kiberxavfsizlikni ta'minlash hamda sun'iy intellekt imkoniyatlaridan unumli foydalangan holda kreativ kontentlar yaratishdir. Har bir loyihaga mukammallik va xavfsizlik prizmasidan yondashaman.",
   experienceYears: 4,
   completedProjects: 48,
   certificatesCount: 15,
@@ -144,7 +144,7 @@ export const socialLinks: SocialLinkItem[] = [
   {
     id: 'linkedin',
     platform: 'LinkedIn',
-    username: 'Muxriddinbek Tursunov',
+    username: "Muxriddin Ro'zimboyev",
     url: 'https://linkedin.com',
     followers: '500+ aloqalar',
     colorClass: 'bg-[#0077b5]/10 text-[#0077b5] border-[#0077b5]/20 hover:bg-[#0077b5] hover:text-white',

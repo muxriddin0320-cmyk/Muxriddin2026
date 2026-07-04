@@ -1,6 +1,6 @@
 {
-  "name": "Muxriddinbek Portfolio",
-  "description": "Muxriddinbek uchun premium dizayndagi shaxsiy portfolio va ijtimoiy tarmoqlar bio havola veb-sayti.",
+  "name": "Muxriddin Portfolio",
+  "description": "Muxriddin uchun premium dizayndagi shaxsiy portfolio va ijtimoiy tarmoqlar bio havola veb-sayti.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

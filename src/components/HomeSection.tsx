@@ -109,7 +109,7 @@ export const HomeSection: React.FC<HomeSectionProps> = ({ isDarkMode }) => {
               <img 
                 id="profile-img"
                 src={profilePhoto} 
-                alt="Muxriddinbek Tursunov" 
+                alt="Muxriddin Ro'zimboyev" 
                 className="w-full h-full object-cover rounded-full object-top transform hover:scale-105 transition-transform duration-500 referrerpolicy"
                 referrerPolicy="no-referrer"
               />
@@ -192,7 +192,7 @@ export const HomeSection: React.FC<HomeSectionProps> = ({ isDarkMode }) => {
             <p className={`text-lg sm:text-2xl font-mono tracking-wide ${
               isDarkMode ? 'text-slate-300' : 'text-slate-600'
             }`}>
-              I am a:{' '}
+              Kasbi:{' '}
               <span className={`font-bold typing-caret pb-1 border-b-2 ${
                 isDarkMode 
                   ? 'text-orange-500 border-orange-500/40 glow-text-orange' 
