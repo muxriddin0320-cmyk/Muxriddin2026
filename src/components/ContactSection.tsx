@@ -19,7 +19,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDarkMode }) =>
 
   const contactDetails = [
     { label: 'Telefon raqam', value: profileData.phone, href: `tel:${profileData.phone.replace(/\s+/g, '')}`, icon: <Phone className="w-5 h-5" /> },
-    { label: 'Telegram', value: '@muxriddin_t', href: profileData.telegram, icon: <Send className="w-5 h-5 rotate-315" /> },
+    { label: 'Telegram', value: '@MuxriddinRozimboyev', href: profileData.telegram, icon: <Send className="w-5 h-5 rotate-315" /> },
     { label: 'E-pochta', value: profileData.email, href: `mailto:${profileData.email}`, icon: <Mail className="w-5 h-5" /> },
     { label: 'Manzil', value: profileData.location, href: '#', icon: <MapPin className="w-5 h-5" /> },
     { label: 'Ish vaqti', value: profileData.workingHours, href: '#', icon: <Clock className="w-5 h-5" /> },
@@ -169,12 +169,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDarkMode }) =>
                 : 'glass-card-light border-slate-100 shadow-xl shadow-slate-100/40'
             }`}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47915.939211326465!2d69.21319119642407!3d41.352427848695024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb1f173c2e74275%3A0x600f796bf85cbda2!2sYunusabad%20District%2C%20Tashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+                src="https://maps.google.com/maps?q=Chust,%20Namangan%20Viloyati,%20O'zbekiston&t=&z=12&ie=UTF8&iwloc=&output=embed"
                 className="w-full h-full rounded-2xl border-0 opacity-80 hover:opacity-100 transition-opacity"
                 allowFullScreen={false}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Toshkent, Yunusobod Google Map"
+                title="Namangan, Chust Google Map"
               />
             </div>
           </motion.div>
