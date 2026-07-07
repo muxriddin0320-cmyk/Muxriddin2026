@@ -16,6 +16,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDarkMode }) =>
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const contactDetails = [
     { label: 'Telefon raqam', value: profileData.phone, href: `tel:${profileData.phone.replace(/\s+/g, '')}`, icon: <Phone className="w-5 h-5" /> },
@@ -53,18 +54,43 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDarkMode }) =>
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validateForm()) return;
 
     setIsSubmitting(true);
-    // Simulate API request
-    setTimeout(() => {
+    setSubmitError(null);
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/muxriddin0320@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          message: formData.message,
+          _captcha: "false",
+          _subject: "Yangi xabar - Muxriddin Portfolio",
+          _template: "table"
+        })
+      });
+
+      if (response.ok) {
+        setIsSuccess(true);
+        setFormData({ name: '', phone: '', email: '', message: '' });
+      } else {
+        setSubmitError("Xabar yuborishda xatolik yuz berdi. Iltimos, keyinroq qayta urinib ko'ring yoki to'g'ridan-to'g'ri elektron pochtamga yozing.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setSubmitError("Aloqa o'rnatishda tarmoq xatoligi yuz berdi. Internet aloqasini tekshirib qayta urinib ko'ring.");
+    } finally {
       setIsSubmitting(false);
-      setIsSuccess(true);
-      // Clear form
-      setFormData({ name: '', phone: '', email: '', message: '' });
-    }, 1800);
+    }
   };
 
   return (
@@ -323,6 +349,13 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ isDarkMode }) =>
                           </span>
                         )}
                       </div>
+                      
+                      {submitError && (
+                        <div className="p-3.5 rounded-xl border border-red-500/20 bg-red-500/5 text-red-500 text-xs font-medium flex items-center gap-2 mt-2">
+                          <AlertTriangle className="w-4 h-4 shrink-0" />
+                          <span>{submitError}</span>
+                        </div>
+                      )}
                     </div>
 
                     {/* Submit Button */}
